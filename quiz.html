@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>線上測驗系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-body">
+  <header class="navbar" role="banner">
+    <div class="brand">EdTech Quiz</div>
+    <nav class="menu show-desktop" aria-label="主要導覽">
+      <a href="index.html">回首頁</a>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <section class="card quiz-card" aria-labelledby="quizTitle">
+      <h1 id="quizTitle">線上測驗系統</h1>
+
+      <!-- 進度條 -->
+      <div aria-hidden="true" style="margin:10px 0 16px;">
+        <div id="progressWrap" style="height:8px;background:#1b2335;border-radius:999px;overflow:hidden;">
+          <div id="progressBar" style="height:100%;width:0;background:linear-gradient(90deg,#6aa6ff,#89f0ff)"></div>
+        </div>
+      </div>
+
+      <div id="quiz-root" class="quiz-root" role="region" aria-live="polite">
+        <div class="center">
+          <button id="startBtn" class="cta">開始作答</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">© 2025 EdTech Interactive Site</footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
+０
